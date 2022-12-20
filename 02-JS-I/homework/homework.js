@@ -88,6 +88,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
+  
   return x % y;
 }
 
@@ -176,7 +177,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola "+nombre;
+  return "Hola "+nombre+"!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
