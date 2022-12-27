@@ -15,7 +15,7 @@ const {
   resta,
   divide,
   multiplica,
-  obtenerRestoo,
+  obtenerResto,
   esPar,
   esImpar,
   elevarAlCuadrado,
