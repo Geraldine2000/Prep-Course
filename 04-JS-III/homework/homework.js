@@ -108,6 +108,20 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  
+  if (arguments.length===1) {
+    return arguments[0];
+  } 
+    else if(arguments.length===0) {
+    return 0;
+   }
+  else {
+    for (let index = 1; index < arguments.length; index++) {
+      arguments[0]=arguments[0]*arguments[index];
+    }
+   }
+
+   return arguments[0];
 
 }
 
@@ -146,7 +160,14 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-
+  let str = n.toString()
+  let arr = str.split("")
+  if (arr[0]==="9") {
+    return true
+  }
+  else{
+    return false
+  }
 }
 
 
@@ -202,24 +223,24 @@ function breakStatement(numero) {
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
   //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
-  //devolver: 
+  //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let nuevoNumero=numero;
-  let num=[]
- for (let i = 0; i < 10; i++) {
-  if (nuevoNumero===i) {
-    "Se interrumpió la ejecución"
-   break;
- }
- else{
-   nuevoNumero=nuevoNumero+2
-  num.push(nuevoNumero);
- }
- 
-  
- }
- return num;
+  let index=10
+  let num=numero
+  let array = [];
+  for (let i = 0; i < 10; i++) {
+    index-1
+    num = num + 2
+    array.push(num);
+    if (index==0) {
+      break
+  }
+  else if (i===num) {
+    return"Se interrumpió la ejecución";
+  }
+  }
+  return array;
 }
 
 
